@@ -27,7 +27,7 @@ async def api_call2(call_uri, returnObj=False):
 async def nekosembed(self, ctx, user, action: str, endpoint: str):
     embed = discord.Embed(
         description=f"**{ctx.author.mention}** {action} {f'**{str(user.mention)}**' if user else 'themselves'}!",
-        color=discord.Colour.random(),
+        color=discord.Colour.dark_theme(),
     )
     embed.set_author(name=self.bot.user.display_name, icon_url=self.bot.user.avatar_url)
     embed.set_image(url=await api_call(f"https://nekos.life/api/v2/img/{endpoint}"))
@@ -44,12 +44,12 @@ async def kawaiiembed(self, ctx, action: str, endpoint: str, user=None):
     if user is None:
         embed = discord.Embed(
             description=f"**{ctx.author.mention}** {action}",
-            color=discord.Colour.random(),
+            color=discord.Colour.dark_theme(),
         )
     else:
         embed = discord.Embed(
             description=f"**{ctx.author.mention}** {action} {f'**{str(user.mention)}**' if user else 'themselves'}!",
-            color=discord.Colour.random(),
+            color=discord.Colour.dark_theme(),
         )
     embed.set_footer(
         text=f"Requested by {ctx.message.author.display_name}",
