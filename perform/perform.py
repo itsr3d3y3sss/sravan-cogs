@@ -441,7 +441,7 @@ class Perform(commands.Cog):
         i = randint(0, mn - 1)
 
         em = discord.Embed(
-            colour=discord.Colour.random(),
+            colour=discord.Colour.dark_theme(),
             description=f"**{ctx.author.mention}** just spanked {f'**{str(user.mention)}**' if user else 'themselves'}!",
         )
         em.set_author(
@@ -515,7 +515,7 @@ class Perform(commands.Cog):
         i = randint(0, mn - 1)
 
         em = discord.Embed(
-            colour=discord.Colour.random(),
+            colour=discord.Colour.dark_theme(),
             description=f"**{ctx.author.mention}** feeds {f'**{str(user.mention)}**' if user else 'themselves'}!",
         )
         em.set_author(
@@ -1100,7 +1100,7 @@ class Perform(commands.Cog):
         i = randint(0, mn - 1)
 
         em = discord.Embed(
-            colour=discord.Colour.random(),
+            colour=discord.Colour.dark_theme()
             description=f"**{ctx.author.mention}** just kicked nuts of {f'**{str(user.mention)}**' if user else 'themselves'}!",
         )
         em.set_author(
