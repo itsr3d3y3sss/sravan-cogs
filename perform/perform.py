@@ -212,7 +212,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).poke_r()
         used = await self.config.user(ctx.author).poke_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total pokes: {used + 1} | {ctx.author.name} has poked {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has poked {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -237,7 +237,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).kiss_r()
         used = await self.config.user(ctx.author).kiss_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total kisses: {used + 1} | {ctx.author.name} has kissed {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has kissed {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -262,7 +262,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).hug_r()
         used = await self.config.user(ctx.author).hug_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total hugs: {used + 1} | {ctx.author.name} has hugged {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has hugged {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -285,7 +285,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).pat_r()
         used = await self.config.user(ctx.author).pat_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total pats: {used + 1} | {ctx.author.name} has patted {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has patted {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -308,7 +308,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).tickle_r()
         used = await self.config.user(ctx.author).tickle_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total tickles: {used + 1} | {ctx.author.name} has tickled {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has tickled {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -352,7 +352,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).lick_r()
         used = await self.config.user(ctx.author).lick_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total licks: {used + 1} | {ctx.author.name} has licked {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has licked {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -377,7 +377,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).slap_r()
         used = await self.config.user(ctx.author).slap_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total slaps: {used + 1} | {ctx.author.name} has slapped {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has slapped {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -451,7 +451,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).spank_r()
         used = await self.config.user(ctx.author).spank_s()
         em.set_footer(
-            text=f"{ctx.author.name}'s total spanks: {used + 1} | {ctx.author.name} has spanked {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has spanked {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -525,7 +525,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).feed_r()
         used = await self.config.user(ctx.author).feed_s()
         em.set_footer(
-            text=f"{ctx.author.name}'s total feeds: {used + 1} | {ctx.author.name} has feeded {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has feed {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -550,7 +550,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).punch_r()
         used = await self.config.user(ctx.author).punch_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total punches: {used + 1} | {ctx.author.name} has punched {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has punched {user.name} {target + 1} times"
         )
         if ctx.channel.permissions_for(ctx.channel.guild.me).manage_webhooks is True:
             try:
@@ -607,7 +607,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).highfive_r()
         used = await self.config.user(ctx.author).highfive_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total highfives: {used + 1} | {ctx.author.name} has highfived {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has highfived {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -630,7 +630,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).plead_r()
         used = await self.config.user(ctx.author).plead_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total pleads: {used + 1} | {ctx.author.name} has pleaded {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has pleaded {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -704,7 +704,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).kill_r()
         used = await self.config.user(ctx.author).kill_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total kills: {used + 1} | {ctx.author.name} has killed {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has killed {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -727,7 +727,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).love_r()
         used = await self.config.user(ctx.author).love_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total loves: {used + 1} | {ctx.author.name} has loved {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has loved {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -801,7 +801,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).bite_r()
         used = await self.config.user(ctx.author).bite_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total bites: {used + 1} | {ctx.author.name} has bitten {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has bitten {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -841,7 +841,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).yeet_r()
         used = await self.config.user(ctx.author).yeet_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total yeets: {used + 1} | {ctx.author.name} has yeeted {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has yeeted {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -966,7 +966,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).protect_r()
         used = await self.config.user(ctx.author).protect_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total protects: {used + 1} | {ctx.author.name} has protected {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has protected {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -1074,7 +1074,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).wave_r()
         used = await self.config.user(ctx.author).wave_s()
         embed.set_footer(
-            text=f"{ctx.author.name}'s total waves: {used + 1} | {ctx.author.name} has waved {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has waved to {user.name} {target + 1} times"
         )
         if await self.check_perm(ctx) is True:
             try:
@@ -1110,7 +1110,7 @@ class Perform(commands.Cog):
         target = await self.config.custom("Target", ctx.author.id, user.id).nut_r()
         used = await self.config.user(ctx.author).nut_s()
         em.set_footer(
-            text=f"{ctx.author.name}'s total nutkicks: {used + 1} | {ctx.author.name} has nutkicked {user.name} {target + 1} times"
+            text=f"{ctx.author.name} has nutkicked {user.name} {target + 1} times"
         )
         if ctx.channel.permissions_for(ctx.channel.guild.me).manage_webhooks is True:
             try:
