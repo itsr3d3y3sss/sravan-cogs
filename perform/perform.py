@@ -552,7 +552,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has punched {user.name} {target + 1} times"
         )
-        if ctx.channel.permissions_for(ctx.channel.guild.me).manage_webhooks is True:
+        if ctx.channel.permissions_for(ctx.channel.guild.me).manage_webhooks is False:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
