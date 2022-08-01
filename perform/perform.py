@@ -189,7 +189,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has cuddled {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -214,7 +214,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has poked {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -239,7 +239,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has kissed {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -264,7 +264,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has hugged {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -287,7 +287,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has patted {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -310,7 +310,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has tickled {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -332,7 +332,7 @@ class Perform(commands.Cog):
             return await ctx.send("shiro.gg api is down")
         used = await self.config.user(ctx.author).smug_s()
         embed.set_footer(text=f"{ctx.author.name}'s total smugs: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -354,7 +354,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has licked {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -379,7 +379,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has slapped {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -401,7 +401,7 @@ class Perform(commands.Cog):
             return await ctx.send("shiro.gg api is down")
         used = await self.config.user(ctx.author).cry()
         embed.set_footer(text=f"{ctx.author.name}'s total cries: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -420,7 +420,7 @@ class Perform(commands.Cog):
             return await ctx.send("shiro.gg api is down")
         used = await self.config.user(ctx.author).sleep()
         embed.set_footer(text=f"{ctx.author.name}'s total sleeps: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -453,7 +453,7 @@ class Perform(commands.Cog):
         em.set_footer(
             text=f"{ctx.author.name} has spanked {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, em, user)
             except discord.Forbidden:
@@ -475,7 +475,7 @@ class Perform(commands.Cog):
             return await ctx.send("shiro.gg api is down")
         used = await self.config.user(ctx.author).pout()
         embed.set_footer(text=f"{ctx.author.name}'s total pouts: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -494,7 +494,7 @@ class Perform(commands.Cog):
             return await ctx.send("shiro.gg api is down")
         used = await self.config.user(ctx.author).blush()
         embed.set_footer(text=f"{ctx.author.name}'s total blushes: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -527,7 +527,7 @@ class Perform(commands.Cog):
         em.set_footer(
             text=f"{ctx.author.name} has feed {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, em, user)
             except discord.Forbidden:
@@ -589,7 +589,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is amazed!", "amazing")
         used = await self.config.user(ctx.author).amazed()
         embed.set_footer(text=f"{ctx.author.name}'s total amazes: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -609,7 +609,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has highfived {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -632,7 +632,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has pleaded {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -652,7 +652,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is clapping!", "clap")
         used = await self.config.user(ctx.author).clap()
         embed.set_footer(text=f"{ctx.author.name}'s total claps: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -669,7 +669,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is facepalming!", "facepalm")
         used = await self.config.user(ctx.author).facepalm()
         embed.set_footer(text=f"{ctx.author.name}'s total facepalms: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -686,7 +686,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is facedesking!", "facedesk")
         used = await self.config.user(ctx.author).facedesk()
         embed.set_footer(text=f"{ctx.author.name}'s total facedesks: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -706,7 +706,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has killed {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -729,7 +729,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has loved {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -749,7 +749,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is hiding!", "hide")
         used = await self.config.user(ctx.author).hide()
         embed.set_footer(text=f"{ctx.author.name}'s total hides: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -766,7 +766,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is laughing!", "laugh")
         used = await self.config.user(ctx.author).laugh()
         embed.set_footer(text=f"{ctx.author.name}'s total laughs: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -783,7 +783,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is lurking!", "peek")
         used = await self.config.user(ctx.author).lurk()
         embed.set_footer(text=f"{ctx.author.name}'s total lurks: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -803,7 +803,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has bitten {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -823,7 +823,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is dancing", "dance")
         used = await self.config.user(ctx.author).dance()
         embed.set_footer(text=f"{ctx.author.name}'s total dances: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -843,7 +843,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has yeeted {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -863,7 +863,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is dodging!", "dodge")
         used = await self.config.user(ctx.author).dodge()
         embed.set_footer(text=f"{ctx.author.name}'s total dodges: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -880,7 +880,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is happy!", "happy")
         used = await self.config.user(ctx.author).happy()
         embed.set_footer(text=f"{ctx.author.name}'s total happiness: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -897,7 +897,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is acting cute!", "cute")
         used = await self.config.user(ctx.author).cute()
         embed.set_footer(text=f"{ctx.author.name}'s total cuteness: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -914,7 +914,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is lonely!", "lonely")
         used = await self.config.user(ctx.author).lonely()
         embed.set_footer(text=f"{ctx.author.name}'s total loneliness: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -931,7 +931,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is angry!", "mad")
         used = await self.config.user(ctx.author).mad()
         embed.set_footer(text=f"{ctx.author.name}'s total angriness: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -948,7 +948,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "'s nose is bleeding!", "nosebleed")
         used = await self.config.user(ctx.author).nosebleed()
         embed.set_footer(text=f"{ctx.author.name}'s total nosebleeds: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -968,7 +968,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has protected {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
@@ -988,7 +988,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is running!", "run")
         used = await self.config.user(ctx.author).run()
         embed.set_footer(text=f"{ctx.author.name}'s total runs: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -1005,7 +1005,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is scared!", "scared")
         used = await self.config.user(ctx.author).scared()
         embed.set_footer(text=f"{ctx.author.name}'s total scares: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -1022,7 +1022,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is shrugging!", "shrug")
         used = await self.config.user(ctx.author).shrug()
         embed.set_footer(text=f"{ctx.author.name}'s total shrugs: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -1039,7 +1039,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is screaming!", "scream")
         used = await self.config.user(ctx.author).scream()
         embed.set_footer(text=f"{ctx.author.name}'s total screams: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -1056,7 +1056,7 @@ class Perform(commands.Cog):
         embed = await kawaiiembed(self, ctx, "is stareing!", "stare")
         used = await self.config.user(ctx.author).stare()
         embed.set_footer(text=f"{ctx.author.name}'s total stares: {used + 1}")
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed)
             except discord.Forbidden:
@@ -1076,7 +1076,7 @@ class Perform(commands.Cog):
         embed.set_footer(
             text=f"{ctx.author.name} has waved to {user.name} {target + 1} times"
         )
-        if await self.check_perm(ctx) is False:
+        if await self.check_perm(ctx) is True:
             try:
                 await print_it(self, ctx, embed, user)
             except discord.Forbidden:
