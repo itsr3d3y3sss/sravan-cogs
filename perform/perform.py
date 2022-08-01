@@ -121,7 +121,7 @@ class Perform(commands.Cog):
             "stare": 0,
             "wave_s": 0,
             "nut_s": 0,
-        }
+                   }
         default_target = {
             "cuddle_r": 0,
             "poke_r": 0,
@@ -176,7 +176,7 @@ class Perform(commands.Cog):
 
     async def check_perm(self, ctx):
         perm = ctx.channel.permissions_for(ctx.channel.guild.me).manage_webhooks
-        return perm is True
+        return perm is False
 
     @commands.cooldown(1, 10, commands.BucketType.user)
     @commands.command()
